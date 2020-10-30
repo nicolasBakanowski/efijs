@@ -1,0 +1,29 @@
+<div ng-controller="addproduct">
+  <div class="row">
+    <div class="col">
+      <input type="number" class="form-control" placeholder="codigo" ng-model='product.code'>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="nombre producto" ng-model=product.name>
+    </div>
+    <div class="col">
+        <input type="text" class="form-control" placeholder="detalle producto" ng-model=product.detail>
+      </div>
+    <div class="col">
+        <input type="number" class="form-control" placeholder="precio" ng-model=product.price>
+      </div>
+    <div class="col">
+        <input type="number" class="form-control" placeholder="stock minimo"ng-model=product.stockmin>
+    </div> 
+    <div class="col">
+        <input type="number" class="form-control" placeholder="stock maximo"ng-model=product.stockmax>
+      </div>
+      <div class="col">
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" ng-model=product.active>
+            <label class="form-check-label" for="exampleCheck1">en stock</label>
+        </div>
+  </div>
+  <button ng-click="addProduct()">agregar producto</button> <br>
+  {{product}}
+</div>
