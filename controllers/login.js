@@ -1,12 +1,13 @@
 angular.module('appmain').
-controller('login',['$scope','loginService',function($scope,lgservice){
-    user=[{user:$scope.user, pass:$scope.pass}];
+controller('login',['$scope','$location', 'loginService',function($scope, location, lgservice){
+    let user={user:$scope.user, pass:$scope.pass};
+    console.log(user);
     $scope.isadmin= function(){
        if (lgservice.auth(user)){
+           location.path('/admin')
            //path only admin - with crud acces
        }else{
            //path guest user- only view 
        }
-
     }
 }]);    

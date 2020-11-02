@@ -10,7 +10,10 @@ angular.module('appmain',['ngRoute']) // definimos un modulo
           controller: "listarcontroller",
           templateUrl: "views/productlist.html"
         })
-
+        .when('/login', {
+          controller: "login",
+          templateUrl: "views/login.html"
+        })
       .otherwise({
         redirectTo: "/"
        });
