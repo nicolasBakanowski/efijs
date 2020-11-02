@@ -14,6 +14,12 @@ angular.module('appmain',['ngRoute']) // definimos un modulo
           controller: "login",
           templateUrl: "views/login.html"
         })
+        .when('/admin', {
+          templateUrl: "views/admin.html"
+        })
+        .when('/', {
+          templateUrl: "views/home.html"
+        })
       .otherwise({
         redirectTo: "/"
        });
