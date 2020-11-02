@@ -1,6 +1,7 @@
-<div ng-controller='listarcontroller'>
-    <button ng-click="listarproducto()">mostrarproducto</button>
+<button ng-click="listarproducto()">mostrarproducto</button>
         <li ng-repeat="producto in lista">
-        <h3>Nombre: <b>{{producto.name}}</b></h3>
+        Nombre: {{producto.name}} <br>
+        detalle: {{producto.detail}} <br>
+        precio: {{producto.price}} <br>
+        --------------------------
     </li>
-    </div>
