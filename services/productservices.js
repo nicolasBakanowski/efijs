@@ -18,12 +18,30 @@ angular.module('appmain') // obtenemos la referencia al modulo principal
             return listProducts;
         },
         addPro: function (product) {
-            console.log(product);
             listProducts.push(product);
-            window.localStorage.setItem('prodcuto',JSON.stringify(listProducts));
+            window.localStorage.setItem('producto',JSON.stringify(listProducts));
 
         },
-        
+        buscarProducto: function(nombreProducto){
+            console.log(listProducts[0].name);
+            for(n=0; n<listProducts.length; n++){
+                console.log("hola");
+                if(listProducts[n].name == nombreProducto){
+                    console.log(listProducts[n].name, " Encontrado");
+                    return listProducts[n];
+                }
+            }
+            
+        },
+        eliminarProducto: function(nombreProducto){
+            for(let n=0; n<lista.length; n++){
+                if(lista[n].name == nombreProducto){
+                    lista.splice(n - 1, 1);
+                }
+            }
+        }
+
+
     }
 });
 

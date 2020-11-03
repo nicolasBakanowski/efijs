@@ -17,6 +17,11 @@ angular.module('appmain',['ngRoute']) // definimos un modulo
         .when('/admin', {
           templateUrl: "views/admin.html"
         })
+        .when('/buscarProductos', {
+          controller: "filterProduct",
+          templateUrl: "views/filterProduct.html"
+        })
+
         .when('/', {
           templateUrl: "views/home.html"
         })
