@@ -15,14 +15,12 @@ angular.module('appmain') // obtenemos la referencia al modulo principal
    // Closures - JavaScript 
     return {
         getProduct: function () {
-            console.log(listProducts);
             return listProducts;
         },
         addPro: function (product) {
-            console.log(product);
             listProducts.push(product);
             window.localStorage.setItem('producto',JSON.stringify(listProducts));
-
+            
         },
     }
 });
