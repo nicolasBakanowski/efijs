@@ -4,8 +4,7 @@ controller('filterProduct', ['$scope', 'ProductService', function($scope, prodse
     $scope.productoBuscado = '';
     $scope.filtrarProducto = function(){
         productoFiltrado = prodservi.buscarProducto($scope.productoBuscado);
-        console.log(productoFiltrado);
-        return productoFiltrado;
+        $scope.mostrarProductoFiltrado = productoFiltrado;
     }
 }])
 

@@ -21,7 +21,10 @@ angular.module('appmain',['ngRoute']) // definimos un modulo
           controller: "filterProduct",
           templateUrl: "views/filterProduct.html"
         })
-
+        .when('/eliminarProductos', {
+          controller: "deleteproduct",
+          templateUrl: "views/deleteProduct.html"
+        })
         .when('/', {
           templateUrl: "views/home.html"
         })

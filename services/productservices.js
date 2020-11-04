@@ -23,20 +23,19 @@ angular.module('appmain') // obtenemos la referencia al modulo principal
 
         },
         buscarProducto: function(nombreProducto){
-            console.log(listProducts[0].name);
             for(n=0; n<listProducts.length; n++){
-                console.log("hola");
                 if(listProducts[n].name == nombreProducto){
+                    console.log(listProducts[n])
                     console.log(listProducts[n].name, " Encontrado");
                     return listProducts[n];
                 }
-            }
-            
+            }            
         },
         eliminarProducto: function(nombreProducto){
-            for(let n=0; n<lista.length; n++){
-                if(lista[n].name == nombreProducto){
-                    lista.splice(n - 1, 1);
+            for(let n=0; n<listProducts.length; n++){
+                if(listProducts[n].name == nombreProducto){
+                    console.log("Eliminando..")
+                    listProducts.splice(n, 1);
                 }
             }
         }
