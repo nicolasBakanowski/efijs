@@ -1,13 +1,19 @@
-<h1><strong>Eliminar un producto</strong></h1>
+<div class="container">
+    <div class="text-center borderDashed containerMarginTop">
+        <h1><strong>Eliminar un producto</strong></h1>
 
-<div>
-    <input type="text" placeholder="Nombre de producto" id="" ng-model="productoBuscado">
+        <div>
+            <input type="text" placeholder="Nombre de producto" class="buttonFontSize" ng-model="productoBuscado">
 
-    <input type="button" value="Eliminar" ng-click="eliminarProducto()">
-
-    <h2>Detalles del producto:</h2>
-    Codigo: {{mostrarProductoFiltrado.code}} <br>
-    Nombre: {{mostrarProductoFiltrado.name}} <br>
-    Precio: {{mostrarProductoFiltrado.price}} <br>
-    
+            <input type="button" value="Eliminar" class="buttonFontSize" ng-click="eliminarProducto()">
+            <br>
+            <br>
+            <br>
+            <h3>Detalles del producto:
+            Codigo: {{mostrarProductoFiltrado.code}} <br>
+            Nombre: {{mostrarProductoFiltrado.name}} <br>
+            Precio: {{mostrarProductoFiltrado.price}} <br></h3>
+            
+        </div>
+    </div>
 </div>

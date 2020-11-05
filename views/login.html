@@ -1,9 +1,11 @@
-<div ng-controller="login" class="container-sm">
-    <div class="paddingLogin">
-        <input type="text" class="form-control col-md-3" placeholder="Usuario" ng-model='user.user'>
+<div class="container">
+    <div ng-controller="login">
+        <div class="paddingLogin containerMarginTop">
+            <input type="text" class="form-control col-md-4 buttonFontSize" placeholder="Usuario" ng-model='user.user'>
 
-        <input type="text" class="form-control col-md-3" placeholder="Contraseña" ng-model='user.pass'>
-
-        <input type="submit" value="Iniciar" ng-click='isadmin()'>
+            <input type="password" class="form-control col-md-4 buttonFontSize" placeholder="Contraseña" ng-model='user.pass'>
+            
+            <input type="submit" class="buttonFontSize" value="Iniciar" ng-click='isadmin()'>
+        </div>
     </div>
 </div>

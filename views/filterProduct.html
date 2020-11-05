@@ -1,13 +1,16 @@
-<h1><strong>Buscar producto por nombre</strong></h1>
-
-<div>
-    <input type="text" placeholder="Nombre de producto" id="" ng-model="productoBuscado">
-
-    <input type="button" value="Buscar" ng-click="filtrarProducto()">
-
-    <h1>Detalles del producto:</h1>
-    Codigo: {{mostrarProductoFiltrado.code}} <br>
-    Nombre: {{mostrarProductoFiltrado.name}} <br>
-    Precio: {{mostrarProductoFiltrado.price}} <br>
-    
+<div class="container">
+    <div class="text-center borderDashed containerMarginTop">
+        <h1><strong>Buscar producto por nombre</strong></h1>
+        <div>
+            <input type="text" placeholder="Nombre de producto" class="buttonFontSize" ng-model="productoBuscado">
+            <input type="button" value="Buscar" ng-click="filtrarProducto()" class="buttonFontSize">
+            <br><br><br>
+            <h1>Detalles del producto:</h1>
+            <h3>
+            Codigo: {{mostrarProductoFiltrado.code}} <br>
+            Nombre: {{mostrarProductoFiltrado.name}} <br>
+            Precio: ${{mostrarProductoFiltrado.price}} <br>
+            </h3>
+        </div>
+    </div>
 </div>
