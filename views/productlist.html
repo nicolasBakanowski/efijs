@@ -1,7 +1,10 @@
-<button ng-click="listarproducto()">Mostrar productos</button>
+
+<button ng-click="listarproducto()" >Mostrar productos</button>
+    <div class="container">
         <li ng-repeat="producto in lista">
-        Nombre: {{producto.name}} <br>
-        detalle: {{producto.detail}} <br>
-        precio: {{producto.price}} <br>
-        --------------------------
-    </li>
+            <h2>Nombre: {{producto.name}} <br>
+            detalle: {{producto.detail}} <br>
+            precio: {{producto.price}} <br>
+            --------------------------</h2>
+        </li>
+    </div>
